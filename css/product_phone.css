@@ -1,0 +1,266 @@
+.w{
+    width: 1190px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.prophone_asdtop{
+    width: 100%;
+    background: rgb(254, 192, 153);
+}
+.prophone_asdtop .main{
+    width: 1190px;
+    height: 80px;
+    margin: 0 auto;
+    position: relative;
+}
+.prophone_asdtop .main .close{
+    position: absolute;
+    background: url(../images/list/close.png);
+    width: 20px;
+    height: 20px;
+    right: 8px;
+    top: 5px;
+}
+.prophone_login{
+    background: #e3e4e5;
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid #DDD;
+}
+.prophone_login .leftnav_pos_list{
+    float: left;
+    display: block;
+}
+.prophone_login .leftnav_pos_list .leftnav_pos_item{
+    position: relative;
+    float: left;
+    padding: 0 2px;
+    height: 30px;
+}
+.leftnav_pos_item .leftnav_pos_icon{
+    background: url(../images/product_phone/home.png);
+    width: 21px;
+    height: 21px;
+    display: inline-block;
+    font-size: 16px;
+    color: black;
+    background-size: 100% 100%;
+    position: relative;
+    top: 6px;
+}
+.locaselection{
+    float: left;
+    height: 30px;
+    padding: 0 2px;
+    line-height: 30px;
+}
+.locaselection .locase_link{
+    padding: 0 20px 0 10px;
+}
+.locase_link_icon{
+    background: url(../images/product_phone/pos.png);
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    width: 24px;
+    height: 19px;
+    background-size: 106% 122%;
+}
+.rightnav_pos_list{
+    float: right;
+    display: flex;
+    height: 30px;
+}
+.rightnav_pos_list .rightnav_pos_item{
+    float: left;
+    height: 30px;
+    padding: 0 2px;
+    position: relative;
+}
+.rightnav_pos_list .spacear{
+    width: 1px;
+    height: 12px;
+    /* margin: 0 10px; */
+    color: black;
+    background: #ccc;
+    margin-top: 9px;
+}
+.rightnav_pos_icon{
+    background: url(../images/bottom.png);
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    right: 5px;
+    top: 8px;
+    background-size: 100%;
+}
+.rightnav_pos_act{
+    width: 49px;
+    padding:0 25px 0 8px;
+    float: left;
+}
+.righticon{
+    padding: 0 10px;
+}
+.rightnav_pos_item .acts1{
+    margin-right: 5px;
+}
+.rightnav_pos_item .acts2{
+    color: red;
+}
+.rightnav_pos_list .rightnav_pos_item:first-child{
+    margin-right: 10px;
+}
+.logo{
+    width: 350px;
+    margin: 15px 0 22px;
+    height: 50px;
+    position: relative;
+    display: block;
+    float: left;
+    line-height: 50px;
+}
+.logo .logo_bgc{
+    background: url(../images/defails/logo.png) no-repeat;
+    width: 143px;
+    height: 42px;
+    display: block;
+    float: left;
+}
+.section_list{
+    position: absolute;
+    top: 11px;
+    left: 176px;
+    width: 166px;
+    height: 45px;
+    padding-left: 10px;
+    background: #fff;
+}
+.section_list .active{
+    float: left;
+    margin-right: 10px;
+    cursor: default;
+    font-size: 20px;
+    line-height: 45px;
+    font-weight: 400;
+    color: #666;
+}
+.section_list .section_all{
+    float: left;
+    color: #666;
+    font-size: 12px;
+    font-weight: 400;
+    position: relative;
+    padding-top: 12px;
+    height: 21px;
+} 
+.section_all .cw_icon{
+    color: #ccc;
+    position: relative;
+    width: 63px;
+    height: 19px;
+    border: 1px solid #ccc;
+    line-height: 19px;
+    z-index: 1;
+    background: #fff;
+    padding: 0 5px;
+}
+.section_all .cw_icon h2{
+    color: #666;
+    font-size: 12px;
+    font-weight: 400;
+}
+.bottom_icon{
+    background: url(../images/bottom.png);
+    width: 24px;
+    height: 16px;
+    position: absolute;
+    right: -2px;
+    top: 2px;
+    display: inline-block;
+    background-size: 100% 100%;
+}
+.search_int{
+    width: 435px;
+    margin: 27px 30px 0 85px;
+    position: relative;
+    z-index: 11;
+    float: left;
+}
+.search_int .from{
+    width: 435px;
+    height: 36px;
+}
+.search_int .from .inpu{
+    width: 345px;
+    border-color: #0893ff;
+    float: left;
+    height: 24px;
+    line-height: 24px;
+    padding: 4px;
+    margin-bottom: 4px;
+    border-width: 2px 0 2px 2px;
+    border-style: solid;
+    outline: 0;
+    font-size: 12px;
+}
+.search_int .from .btn{
+    background: #0893ff;
+    float: left;
+    width: 80px;
+    height: 36px;
+    font-family: tahoma,arial,Microsoft YaHei,Hiragino Sans GB,"\u5b8b\u4f53",sans-serif;
+    border: none;
+    border-radius: 0;
+    line-height: 1;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+.cart{
+    float: left;
+    height: 36px;
+    margin-top: 27px;
+    position: relative;
+    z-index: 12;
+}
+.cart .cw_cart{
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 5px rgba(0,0,0,.2);
+    width: 91px;
+    height: 34px;
+    padding: 0 28px 0 19px;
+    line-height: 34px;
+}
+.cw_cart .cart_icon{
+    background: url(../images/cart.png);
+    left: 90px;
+    top: 4px;
+    font-size: 16px;
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    width: 18px;
+    height: 34px;
+    background-size: 19px 25px;
+    background-repeat: no-repeat;
+}
+.cw_cart .cart_number{
+    position: absolute;
+    top: 1px;
+    left: 105px;
+    display: inline-block;
+    padding: 1px;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: -1px;
+    color: #fff;
+    background-color: #da1026;
+    border-radius: 7px;
+    min-width: 14px;
+    font-family: tahoma,arial;
+    text-align: center;
+    font-style: normal;
+}

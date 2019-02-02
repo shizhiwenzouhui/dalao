@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>京东登录页</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+     <div class="w clear">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo_in/logo.png" alt="">
+            </a>
+            <b class="welcome"></b>
+        </div>
+        <a href="" class="p_link">
+            <b class="p_link_icon"></b>
+            登录页面，问卷调查
+        </a>
+     </div>
+     <div class="content">
+        <div class="tips_wrapper">
+            <div class="tips_inner">
+                <div class="content_warper">
+                    <i class="warper_icon"></i>
+                    <p class="warper_title">
+                        依据《网络安全法》，为保障您的账户安全和正常使用，请尽快完成手机号验证！ 新版
+                        <a href="">《京东隐私政策》</a>
+                        已上线，将更有利于保护您的个人隐私。
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="login_wrapper">
+            <div class="w">
+                <div class="login_from">
+                    <div class="tips_wrapper">
+                        <div class="tips_inner">
+                            <div class="cont_warpper">
+                                <i class="icon_tips"></i>
+                                <p>京东不会以任何理由要求您转账汇款，谨防诈骗。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="login_tab login_tab_l">
+                        <a href="javascript:;" class="login_tab_link login_tab_pos1 checked">扫码登录</a>
+                        <a href="javascript:;" class="login_tab_link login_tab_pos2">账户登录</a>
+                    </div>
+                    <div class="qrcode-login" style="display:none; visibility: visible;">
+                        <div class="mc">
+                            <div class="qrcode-main">
+                                <div class="qrcode-img">
+                                    <img src="images/logo_in/erweima.png" alt="">
+                                </div>
+                                <div class="qrcode-help" style="display:none;"></div>
+                                <div></div>
+                            </div>
+                            <div class="qrcode-panel">
+                                <ul style="display:block;">
+                                    <li class="fore1">
+                                        <span>打开</span>
+                                        <a href="">
+                                            <span class="red">手机京东</span>
+                                        </a>
+                                    </li>
+                                    <li>扫描二维码</li>
+                                </ul>
+                            </div>
+                            <div class="coagent qr-coagent clear">
+                                <ul>
+                                    <li>
+                                        <b></b>
+                                        <em>免输入</em>
+                                    </li>
+                                    <li>
+                                        <b class="faster"></b>
+                                        <em>更快&nbsp;</em>
+                                    </li>
+                                    <li>
+                                        <b class="more-safe"></b>
+                                        <em>更安全</em>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="login-box" style="display:block; visibility: visible;">
+                        <div class="mt"></div>
+                        <div class="msg_wrap"></div>
+                        <div class="form">
+                            <div class="form_inner">
+                               <form action="">
+                                    <div class="fore">
+                                        <input type="text" class="user_name">
+                                    </div>
+                                    <div class="fore ">
+                                        <input type="text" class="user_password">
+                                    </div>
+                               </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="login_theway">
+                        <ul class="coagent_list">
+                            <li class="coagent_items">
+                                <a href="" class="pal">
+                                    <b class="QQ_icon"></b>
+                                    <span class="QQ">QQ</span>
+                                </a>
+                                <span class="line">|</span>
+                            </li>
+                            <li class="coagent_items">
+                                <a href="" class="pal">
+                                    <b class="weixin_icon"></b>
+                                    <span>微信</span>
+                                </a>
+                            </li>
+                            <li class="extra-r">
+                                <div>
+                                    <div class="regist-link">
+                                        <a href="">
+                                            <b></b>
+                                            立即注册
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="login_banner" style="background-color:#ff1f19;">
+                <div class="w">
+                    <div class="banner_bg">
+                        <img src="images/logo_in/banner1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+     <div class="w">
+         <div class="footer">
+             <div class="links">
+                 <a href="">关于我们</a>|
+                 <a href="">联系我们</a>|
+                 <a href="">人才招聘</a>|
+                 <a href="">商家入驻</a>|
+                 <a href="">广告服务</a>|
+                 <a href="">手机京东</a>|
+                 <a href="">友情链接</a>|
+                 <a href="">销售联盟</a>|
+                 <a href="">京东社区</a>|
+                 <a href="">京东公益</a>|
+                 <a href="">English Site</a>|
+             </div>
+             <div class="copyright">
+                Copyright © 2004-2019  京东JD.com 版权所有
+             </div>
+         </div>
+     </div>
+     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+     <script>
+        $(document).ready(function(){
+            $('.login_tab_link').click(function(){
+                $(this).addClass('checked').siblings().removeClass('checked');
+                
+            })
+        })
+     </script>
+</body>
+</html>

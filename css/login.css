@@ -1,6 +1,7 @@
 .w{
     width: 990px;
     margin: 0 auto;
+    position: relative;
 }
 .w .logo{
     margin: 10px 0;
@@ -37,316 +38,186 @@
     padding: 10px 0 10px 0;
     background: #fff8f0;
     width: 100%;
-    text-align: center;
-
+    text-align: center
 }
-.content_warper{
-    display: inline-block;
-    width: 90%;
-}
-.warper_icon{
-    background: url(//misc.360buyimg.com/user/passport/1.0.0/widget/login-form-2018-0827/i/icon-tips.png);
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    vertical-align: middle;
-    margin-right: 5px;
-}
-.warper_title{
-    vertical-align: middle;
-    color: #999;
-    font-size: 12px;
-    display: inline-block;
-}
-.login_from{
-    float: right;
-    position: relative;
-    top: 10px;
-    background: #fff;
-    z-index: 4;
-    width: 346px;
-    visibility: visible;
-}
-.login_tab{
-    height: 54px;
-    font-family: "microsoft yahei";
-    /* text-align: center; */
-    border-bottom: 1px solid #f4f4f4;
-    position: absolute;
-    background: #fff;
-    display: block;
-    width: 346px;
-}
-.login_tab_r{
-    right: 0;
-}
-.login_tab .login_tab_link{
-    width: 173px;
-    height: 27px;
-    border-right: 1px solid #f4f4f4;
-    text-decoration: none;
-    font-size: 18px;
-    width: 1;
-    text-align: center;
-}
-.login_tab_pos1{
-    position: absolute;
-    left: 0;
-    top: 18px;
-}
-.login_tab_pos2{
-    position: absolute;
-    right: 0;
-    top: 18px;
-}
-
-.login_tab .checked{
-    font-weight: 700;
-    color: #e4393c;
-}
-.qrcode-login{
-    width: 306px;
-    padding: 20px 18px 20px 20px;
-    text-align: center;
-}
-.qrcode-main{
-    position: relative;
-    height: 168px;
-    margin-top: 55px;
-}
-.qrcode-img{
-    border: 1px solid #f4f4f4;
-    padding: 8px;
-    width: 155px;
-    position: absolute;
-    left: 64px;
-}
-.qrcode-help{
-    position: absolute;
-    right: -18px;
-    top: -2px;
-    width: 141px;
-    height: 168px;
-    background: url(//misc.360buyimg.com/user/passport/1.0.0/css/i/phone-orange.png) no-repeat;
-    z-index: 99;
-}
-.qrcode-panel{
-    width: 257px;
-    margin: 18px auto 14px;
-    text-align: center;
-}
-.qrcode-panel li{
-    display: inline-block;
-    padding: 0 0 0 5px;
-    margin: 0 5px 0 0;
-}
-.login-form .qrcode-login .qrcode-panel a{
-    color: #333;
-    text-decoration: none;
-    margin-left: -3px;
-}
-.red{
-    color: #e4393c;
-}
-.qr-coagent{
-    background-color: #fff;
-    font-family: "microsoft yahei";
-    color: #999;
-    border: none;
-    padding: 0;
-    line-height: 25px;
-    margin-left: 40px;
-}
-.qr-coagent ul{
-    display: block;
-}
-.qr-coagent li{
-    text-align: left;
-    position: relative;
-    margin-right: 18px;
-}
-.coagent li{
-    float: left;
-}
-.qr-coagent li b{
-    width: 25px;
-    height: 25px;
-    display: block;
-    background: url(//misc.360buyimg.com/user/passport/1.0.0/widget/login-form-2018-0827/i/qr-coagent.png) no-repeat;
-    margin: 0 auto;
-    position: absolute;
-    left: 0;
-}
-
-.qr-coagent li em{
-    padding-left: 32px;
-}
-.qr-coagent li .faster {
-    background-position: -27px;
-}
-.qr-coagent li b{
-    width: 25px;
-    height: 25px;
-    display: block;
-    background: url(//misc.360buyimg.com/user/passport/1.0.0/widget/login-form-2018-0827/i/qr-coagent.png) no-repeat;
-    margin: 0 auto;
-    position: absolute;
-    left: 0;
-
-}
-.coagent_items{
-    float: left;
-    position: relative;
-}
-.login_theway{
-    padding: 0 20px;
-    height: 51px;
-    width: 306px;
-    border-top: 1px solid #f4f4f4;
-    background-color: #fcfcfc;
-    line-height: 51px;
-}
-.QQ_icon{
-    width: 19px;
-    height: 18px;
-    display: block;
-    background: url(//misc.360buyimg.com/user/passport/1.0.0/widget/login-form-2018-0827/i/QQ-weixin.png) no-repeat;
-    margin: 0 auto;
-    position: absolute;
-    float: left;
-    left: 0;
-    top: 16px;
-}
-em{
-    font-style: normal;
-}
-.pal{
-    display: inline-block;
-    position: relative;
-    padding-left: 24px;
-}
-.coagent_items .line{
-    padding: 0 10px;
-    color: #ccc;
-}
-.weixin_icon{
-    background-position: -20px 0;
-}
-.coagent_items .pal .weixin_icon{
-    width: 19px;
-    height: 18px;
-    display: block;
-    background: url(//misc.360buyimg.com/user/passport/1.0.0/widget/login-form-2018-0827/i/QQ-weixin.png) no-repeat;
-    margin: 0 auto;
-    position: absolute;
-    float: left;
-    left: 0;
-    top: 16px;
-    background-position: -20px 0;
-}
-.extra-r{
-    float: right;
-}
-.regist-link{
-    color: #b61d1d;
-    font-size: 14px;
-}
-.regist-link a{
-    color: #b61d1d;
-}
-.extra-r .regist-link b{
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    overflow: hidden;
-    background: url(//misc.360buyimg.com/user/passport/1.0.0/widget/login-form-2018-0827/i/pwd-icons-new.png) -104px -75px no-repeat;
-    vertical-align: middle;
-    margin-right: 5px;
-}
-.cont_warpper p{
-    color: #999;
-    display: inline-block;
-    vertical-align: middle;
-}
-.cont_warpper .icon_tips{
-    background: url(//misc.360buyimg.com/user/passport/1.0.0/widget/login-form-2018-0827/i/icon-tips.png);
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    vertical-align: middle;
-    margin-right: 5px;
-}
-
 .login_wrapper{
-    margin-top: 0;
-    position: relative;
-    height: 475px;
-    margin: 0 0 20px;
-    z-index: 5;
-}
-.login_banner{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 475px;
-    background: #e93854;
-}
-.footer{
-    padding-bottom: 30px;
-    text-align: center;
-}
-.footer .links a{
-    margin: 0 10px;
-    color: #333;
-    font-size: 12px;
-}
-.copyright{
-    margin-top: 10px;
-}
-.login-box{
-    width: 306px;
-    padding: 20px;
-}
-.login-box .mt{
-   height: 35px;
-   display: block;
-   width: 306px;
-   overflow: visible;
-}
-.login-box .msg_wrap{
-    min-height: 23px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    height: auto!important;
-}
-
-.form_inner .fore{
-    width: 304px;
-    height: 40px;
-    border: 1px solid #bdbdbd;
-    position: relative;
     margin-bottom: 20px;
 }
-.fore .user_name{
-    line-height: 18px;
-    height: 18px;
-    border: 0;
-    padding: 10px 0 10px 50px;
-    width: 254px;
-    float: none;
-    overflow: hidden;
-    font-size: 14px;
-    font-family: '\5b8b\4f53';
+.login_wrapper .login_banner .w .logo_in{
+    width: 346px;
+    height: 400px;
+    background: #FFF;
+    position: absolute;
+    right: 10px;
+    top: 40px;
 }
-.fore .user_password{
-    line-height: 18px;
+.login_wrapper .login_banner .w .logo_in .logo_tishi{
+    padding: 10px 0;
+    background: #fff8f0;
+    width: 100%;
+    text-align: center;
+    
+}
+.login_wrapper .login_banner .w .logo_in .logo_tishi i{
+    background: url(../images/logo_in/tishi.png);
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.login_wrapper .login_banner .w .logo_in .logo_tishi p{
+    display: inline-block;
+    vertical-align: middle;
+}
+.login_wrapper .login_banner .w .logo_in .theway_login{
+    width:100%;
+    height: 53px;
+    text-align: center;
+    border-top: 1px solid #CCC;
+    border-bottom: 1px solid #f4f4f4;
+    line-height:53px;
+}
+.login_wrapper .login_banner .w .logo_in .theway_login span{
+    font-size: 18px;
+    font-weight: 900;
+}
+.login_wrapper .login_banner .w .logo_in .ifica_login {
+    padding: 30px 20px;
+}
+.login_wrapper .login_banner .w .logo_in .ifica_login .username{
+    width: 100%;
+    height: 38px;
+    margin-bottom: 20px;
+}
+.login_wrapper .login_banner .w .logo_in .ifica_login .username input{
+    margin-left: 39px;
+    width: 266px;
+    height: 34px;
+}
+
+.login_wrapper .login_banner .w .logo_in .ifica_login .username .icon{
+    width: 38px;
+    height: 36px;
+    background: url(../images/logo_in/pwd-icons-new.png);
+    position: absolute;
+    border: 1px solid #999;
+    border-right: none;
+}
+.login_wrapper .login_banner .w .logo_in .ifica_login .upwd{
+    width: 100%;
+    height: 38px;
+    margin-bottom: 20px;
+}
+.login_wrapper .login_banner .w .logo_in .ifica_login .upwd input{
+    margin-left: 39px;
+    width: 266px;
+    height: 34px;
+}
+
+.login_wrapper .login_banner .w .logo_in .ifica_login .upwd .icon{
+    width: 38px;
+    height: 36px;
+    background: url(../images/logo_in/pwd-icons-new.png);
+    background-position: -48px 0;
+    position: absolute;
+    border: 1px solid #999;
+    border-right: none;
+}
+.login_wrapper .login_banner .w .logo_in .ifica_login .forget_upwd{
+    margin-bottom: 20px;
+    text-align: right;
+}
+.login_wrapper .login_banner .w .logo_in .ifica_login .btnlogin{
+    margin-bottom:10px;
+}
+.login_banner .w .logo_in .ifica_login .btnlogin .btn_wrap{
+    width: 99%;
+    border: 1px solid #cb2a2d;
+    margin: 0 auto;
+    height: 32px;
+    position: relative;
+}
+.login_banner .w .logo_in .ifica_login .btnlogin .btn_wrap a{
+    border: 1px solid #e85356;
+    display: block;
+    width: 302px;
+    background: #e4393c;
+    height: 31px;
+    line-height: 31px;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Microsoft YaHei';
+    text-align: center;
+}
+.login_banner .w .logo_in  .coagent{
+    height: 51px;
+    padding: 0 20px;
+    width: 306px;
+    position: absolute;
+    bottom: 0;
+    background-color: #fcfcfc;
+    margin: 0 auto;
+    border-top: 1px solid #f4f4f4;
+}
+.login_banner .w .logo_in  .coagent .coagent_left{
+    height:50px;
+    line-height: 50px;
+    float: left;
+}
+.login_banner .w .logo_in  .coagent .coagent_left a{
+    float: left;
+    display: block;
+}
+.login_banner .w .logo_in  .coagent .coagent_left a:first-child .icon_qq{
+    background: url(../images/logo_in/QQ-weixin.png);
+    width: 19px;
     height: 18px;
-    border: 0;
-    padding: 10px 0 10px 50px;
-    width: 254px;
-    float: none;
-    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+}
+.login_banner .w .logo_in  .coagent .coagent_left a b{
+    vertical-align: middle;
+}
+.login_banner .w .logo_in  .coagent .coagent_left .line-b{
+    width: 1px;
+    height: 14px;
+    display: block;
+    float: left;
+    margin-top: 20px;
+    z-index: 99;
+    border-right: 1px solid #ccc;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.login_banner .w .logo_in  .coagent .coagent_left a:last-child .icon_qq{
+    background: url(../images/logo_in/QQ-weixin.png);
+    background-position: -20px 0;
+    width: 19px;
+    height: 18px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.login_banner .w .logo_in  .coagent .coagent_right{
+    float: right;
+    line-height: 50px;
+}
+.login_banner .w .logo_in  .coagent .coagent_right .coagent_wrap a{
     font-size: 14px;
-    font-family: '\5b8b\4f53';
+    color: #b61d1d;
+}
+.login_banner .w .logo_in  .coagent .coagent_right .coagent_wrap a .icon{
+    background: url(../images/logo_in/pwd-icons-new.png)-104px -75px no-repeat;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.w .footer{
+    text-align: center;
+}
+.w .footer .links{
+    margin-bottom: 10px;
+}
+.w .footer .links a{
+    margin: 0 10px;
 }

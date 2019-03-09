@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>京东登录页</title>
+    <title>欢迎登陆</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/login.css">
 </head>
@@ -33,107 +34,63 @@
             </div>
         </div>
         <div class="login_wrapper">
-            <div class="w">
-                <div class="login_from">
-                    <div class="tips_wrapper">
-                        <div class="tips_inner">
-                            <div class="cont_warpper">
-                                <i class="icon_tips"></i>
-                                <p>京东不会以任何理由要求您转账汇款，谨防诈骗。</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="login_tab login_tab_l">
-                        <a href="javascript:;" class="login_tab_link login_tab_pos1 checked">扫码登录</a>
-                        <a href="javascript:;" class="login_tab_link login_tab_pos2">账户登录</a>
-                    </div>
-                    <div class="qrcode-login" style="display:none; visibility: visible;">
-                        <div class="mc">
-                            <div class="qrcode-main">
-                                <div class="qrcode-img">
-                                    <img src="images/logo_in/erweima.png" alt="">
-                                </div>
-                                <div class="qrcode-help" style="display:none;"></div>
-                                <div></div>
-                            </div>
-                            <div class="qrcode-panel">
-                                <ul style="display:block;">
-                                    <li class="fore1">
-                                        <span>打开</span>
-                                        <a href="">
-                                            <span class="red">手机京东</span>
-                                        </a>
-                                    </li>
-                                    <li>扫描二维码</li>
-                                </ul>
-                            </div>
-                            <div class="coagent qr-coagent clear">
-                                <ul>
-                                    <li>
-                                        <b></b>
-                                        <em>免输入</em>
-                                    </li>
-                                    <li>
-                                        <b class="faster"></b>
-                                        <em>更快&nbsp;</em>
-                                    </li>
-                                    <li>
-                                        <b class="more-safe"></b>
-                                        <em>更安全</em>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="login-box" style="display:block; visibility: visible;">
-                        <div class="mt"></div>
-                        <div class="msg_wrap"></div>
-                        <div class="form">
-                            <div class="form_inner">
-                               <form action="">
-                                    <div class="fore">
-                                        <input type="text" class="user_name">
-                                    </div>
-                                    <div class="fore ">
-                                        <input type="text" class="user_password">
-                                    </div>
-                               </form>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="login_theway">
-                        <ul class="coagent_list">
-                            <li class="coagent_items">
-                                <a href="" class="pal">
-                                    <b class="QQ_icon"></b>
-                                    <span class="QQ">QQ</span>
-                                </a>
-                                <span class="line">|</span>
-                            </li>
-                            <li class="coagent_items">
-                                <a href="" class="pal">
-                                    <b class="weixin_icon"></b>
-                                    <span>微信</span>
-                                </a>
-                            </li>
-                            <li class="extra-r">
-                                <div>
-                                    <div class="regist-link">
-                                        <a href="">
-                                            <b></b>
-                                            立即注册
-                                        </a>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
             <div class="login_banner" style="background-color:#ff1f19;">
                 <div class="w">
                     <div class="banner_bg">
                         <img src="images/logo_in/banner1.png" alt="">
+                    </div>
+                    <div class="logo_in">
+                        <div class="logo_tishi">
+                            <i></i>
+                            <p>京东不会以任何理由要求您转账汇款，谨防诈骗。</p>
+                        </div>
+                        <div class="theway_login">
+                            <span>用户登录</span>
+                        </div>
+                        <div class="ifica_login">
+                                <form action="">
+                                    <div class="username">
+                                        <span class="icon"></span>
+                                        <input type="text" placeholder="邮箱/用户名/已验证手机">
+                                    </div>
+                                    <div class="upwd">
+                                        <span class="icon"></span>
+                                        <input type="text" placeholder="密码">
+                                    </div>
+                                    <div class="forget_upwd">
+                                        <div>
+                                            <a href="">忘记密码</a>
+                                        </div>
+                                    </div>
+                                    <div class="btnlogin">
+                                            <div class="btn_wrap">
+                                                <a href="">登录</a>
+                                            </div>
+                                    </div>
+                                </form>
+                                
+                        </div>
+                        <div class="coagent">
+                            <div class="coagent_left">
+                                    <a href="">
+                                            <i class="icon_qq"></i>
+                                            <b>QQ</b>
+                                    </a>
+                                    <span class="line-b"></span>
+                                    <a href="">
+                                            <i class="icon_qq"></i>
+                                            <b>微信</b>
+                                    </a>
+                            </div>
+                            <div class="coagent_right">
+                                    <div class="coagent_wrap">
+                                            <a href="./registered.html" target="_blank">
+                                                <b class="icon"></b>
+                                                立即注册
+                                            </a>
+                                    </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -160,13 +117,6 @@
          </div>
      </div>
      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-     <script>
-        $(document).ready(function(){
-            $('.login_tab_link').click(function(){
-                $(this).addClass('checked').siblings().removeClass('checked');
-                
-            })
-        })
-     </script>
+    
 </body>
 </html>

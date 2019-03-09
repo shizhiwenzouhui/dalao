@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/list.css">
+    <link rel="stylesheet" href="css/list.css?v=111">
 </head>
 <body>
     <div class="container">
@@ -2913,16 +2913,12 @@
     </div>
     <script src='https://code.jquery.com/jquery-3.3.1.js'></script>
     <script>
-    $('.box_cont_redm').hover(function(){
-        $('.tag_buy').css('bottom','0')
-        $('.tag_title').css('margin-top','-10px')
-        $('.tag_img').css('margin-top','-10px')
-    },function(){
-        $('.tag_buy').css('bottom','-40px')
-        $('.tag_title').css('margin-top','0')
-        $('.tag_img').css('margin-top','0')
-    })
- 
+      $('.box_cont_redm').mouseover(function(){
+          $(this).addClass('box_cont_redm_on');
+      })
+      $('.box_cont_redm').mouseout(function(){
+         $(this).removeClass('box_cont_redm_on');
+      });
     </script>
 </body>
 </html>

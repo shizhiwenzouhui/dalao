@@ -688,6 +688,7 @@
     background-color: #FFF;
     margin-left:2px;
 }
+
 .box_cont .redom1{
     margin-left:0px;
 }
@@ -712,14 +713,13 @@
     width: 160px;
     height: 160px;
     margin: 0 auto 15px;
-    transition: margin-top .4s ease-out;
+    transition: all .3s ease;
 }
 .tag_title{
     height: 40px;
     line-height: 20px;
     text-align: center;
-    margin-top: 0px;
-    transition: margin-top .4s ease-out;
+    transition: all .3s ease;
     color: #333;
     overflow: hidden;
 }
@@ -732,8 +732,7 @@
     font-size: 16px;
     height:28px;
     line-height: 28px;
-    transition: margin-top .4s ease-out;
-    
+    transition: all .3s ease;
 }
 .tag_buy{
     height: 40px;
@@ -746,7 +745,19 @@
     font-size:14px;
     color: #fff;
     width: 200px;
-    transition: bottom .4s ease-out;
+    transition: bottom .3s ease;
+}
+.box_cont_redm_on .tag_buy{
+    bottom: 0;
+}
+.box_cont_redm_on .tab_price{
+    transform: translateY(-15px);
+}
+.box_cont_redm_on .tag_title{
+    transform: translateY(-10px);
+}
+.box_cont_redm_on .tag_img{
+    transform: translateY(-10px);
 }
 .jiadian_explore{
     margin: 0 auto;

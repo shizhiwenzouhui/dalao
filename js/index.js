@@ -112,20 +112,20 @@ $(function () {
 
         if (i == $('.ms_active1').length) {
             i = 0;
-            $('#jdms_list').stop().animate({ left: 0 },500);
-        }   
-          
-        if (i == -1) { 
-            i = $('.ms_active1').length-1;
-            $('#jdms_list').stop().animate({ left: i * -800 },500);
+            $('#jdms_list').stop().animate({ left: 0 }, 500);
         }
-        $('#jdms_list').stop().animate({left: i * -800},500);
+          
+        if (i == -1) {
+            i = $('.ms_active1').length - 1;
+            $('#jdms_list').stop().animate({ left: i * -800 }, 500);
+        }
+        $('#jdms_list').stop().animate({ left: i * -800 }, 500);
     }
     
-      $('#ms_prev').click(function () {
-          i++;
-          moveList();
-      })
+    $('#ms_prev').click(function () {
+        i++;
+        moveList();
+    })
     
     $('#ms_next').click(function () {
         i--;
@@ -193,7 +193,7 @@ $(function () {
         msAutoPlay = setInterval(function () {
             msCount++;
             msFeat(msCount);
-        }, 3000);   
+        }, 3000);
     }
     function msFeat(num) {
 
@@ -203,13 +203,13 @@ $(function () {
         }
         $('#ms_banner').stop().animate({ left: msCount * -msWidth }, 400);
         
-        if (msCount == ($('#ms_banner .ms_item').length-1)) {
+        if (msCount == ($('#ms_banner .ms_item').length - 1)) {
             $('.ms_indica a').eq(0).addClass('ms_hover').siblings().removeClass('ms_hover');
-        } else { 
+        } else {
             $('.ms_indica a').eq(msCount).addClass('ms_hover').siblings().removeClass('ms_hover');
         }
     }
-    $('.ms_indica .ms_dotItem').mouseover(function () { 
+    $('.ms_indica .ms_dotItem').mouseover(function () {
         clearInterval(msAutoPlay);
         msCount = $(this).index();
         msFeat(msCount);
@@ -218,7 +218,7 @@ $(function () {
     })
 
     //排行榜
-    $('.loder_item').mouseover(function () { 
+    $('.loder_item').mouseover(function () {
         $(this).addClass('active').siblings().removeClass('active');
         var slider = $(this).index();
         $('.tab_body_item').eq(slider).show().siblings().hide();
@@ -244,45 +244,45 @@ $(function () {
     Album_auto();
     
 
-    $('.leftslide').click(function () { 
+    $('#willNext').click(function () {
         clearInterval(Album_time);
         Album_const--;
         Album_wrap(Album_const);
         Album_auto();
     })
 
-    $('.rightslide').click(function () { 
+    $('#willPerv').click(function () {
         clearInterval(Album_time);
         Album_const++
         Album_wrap(Album_const);
         Album_auto();
-    }) 
+    })
 
-    function Album_auto() { 
-        Album_time = setInterval(function () { 
+    function Album_auto() {
+        Album_time = setInterval(function () {
             Album_const++;
             Album_wrap(Album_const);
-        },5000)
+        }, 5000)
     }
         
     function Album_wrap(i) {
-        if (Album_const == $('#willbuy_zj .hmzj_item').length) { 
+        if (Album_const == $('#willbuy_zj .hmzj_item').length) {
             Album_const = 1;
             $('#willbuy_zj').css({ left: 0 });
         }
-        if (Album_const == -1) { 
+        if (Album_const == -1) {
             Album_const = $('#willbuy_zj .hmzj_item').length - 2;
-            $('#willbuy_zj').css({ left: ($('#willbuy_zj .hmzj_item').length - 1) * -350});
+            $('#willbuy_zj').css({ left: ($('#willbuy_zj .hmzj_item').length - 1) * -350 });
         }
         $('#willbuy_zj').stop().animate({ left: Album_const * -350 }, 400);
         if (Album_const == $('#willbuy_zj .hmzj_item').length - 1) {
             $('#Album_dot .slider_indicators_btn').eq(0).addClass('on').siblings().removeClass('on');
-        } else { 
+        } else {
             $('#Album_dot .slider_indicators_btn').eq(Album_const).addClass('on').siblings().removeClass('on');
         }
-     }
+    }
 
-    $('#Album_dot .slider_indicators_btn').mouseover(function () { 
+    $('#Album_dot .slider_indicators_btn').mouseover(function () {
         clearInterval(Album_time);
         Album_const = $(this).index();
         Album_wrap();
@@ -298,32 +298,32 @@ $(function () {
     var couponTime;
     couponAuto();
 
-    function couponAuto() { 
-        couponTime = setInterval(function () { 
+    function couponAuto() {
+        couponTime = setInterval(function () {
             couponConst++;
             couponWrap(couponConst);
-        },3000)
+        }, 3000)
     }
 
-    function couponWrap(coupon) { 
-        if (couponConst == $('#CouponWrap .Coupon_item').length) { 
+    function couponWrap(coupon) {
+        if (couponConst == $('#CouponWrap .Coupon_item').length) {
             couponConst = 1;
             $('#CouponWrap').css({ left: 0 });
         }
-        $('#CouponWrap').stop().animate({ left: couponConst * -350 },400);
+        $('#CouponWrap').stop().animate({ left: couponConst * -350 }, 400);
         
         if (couponConst == $('#CouponWrap .Coupon_item').length - 1) {
             $('#coupon_dot .slider_indicators_btn').eq(0).addClass('on').siblings().removeClass('on');
-        } else { 
+        } else {
             $('#coupon_dot .slider_indicators_btn').eq(couponConst).addClass('on').siblings().removeClass('on');
         }
     }
 
-    $('#coupon_dot .slider_indicators_btn').mouseover(function () { 
+    $('#coupon_dot .slider_indicators_btn').mouseover(function () {
         clearInterval(couponTime);
         couponConst = $(this).index();
         couponWrap();
-    }).mouseout(function () { 
+    }).mouseout(function () {
         couponAuto();
     })
 
@@ -332,7 +332,7 @@ $(function () {
     
     // 寻me
 
-    var  xunMe = $('#xunMe .hmzj_item').first().clone();
+    var xunMe = $('#xunMe .hmzj_item').first().clone();
     $('#xunMe').append(xunMe).width($('#xunMe .hmzj_item').length * $('#xunMe .hmzj_item').width());
 
     var xunMe_const = 0;
@@ -340,45 +340,48 @@ $(function () {
     xunMe_auto();
     
 
-    $('#xun_next').click(function () { 
+    $('#xun_next').click(function () {
         clearInterval(xunMe_time);
         xunMe_const--;
-        xunMe_wrap(xunMe_const);
+        xunMe_wrap();
         xunMe_auto();
     })
 
-    $('#xun_prev').click(function () { 
+    $('#xun_prev').click(function () {
         clearInterval(xunMe_time);
         xunMe_const++
-        xunMe_wrap(xunMe_const);
+        xunMe_wrap();
         xunMe_auto();
-    }) 
+    })
 
-    function xunMe_auto() { 
-        xunMe_time = setInterval(function () { 
+    function xunMe_auto() {
+        xunMe_time = setInterval(function () {
             xunMe_const++;
             xunMe_wrap(xunMe_const);
-        },5000)
+        }, 3000)
     }
     
-    function xunMe_wrap(i) {
-        if ( xunMe_const == $('#xunMe .hmzj_item').length) { 
+    function xunMe_wrap() {
+        if (xunMe_const == $('#xunMe .hmzj_item').length) {
             xunMe_const = 1;
             $('#xunMe').css({ left: 0 });
         }
-        if (xunMe_const == -1) { 
+     
+        if (xunMe_const == -1) {
             xunMe_const = $('#xunMe .hmzj_item').length - 2;
-            $('#xunMe').css({ left: ($('#xunMe .hmzj_item').length - 1) * -350});
+            $('#xunMe').css({ left: ($('#xunMe .hmzj_item').length - 1) * -350 });
         }
+
         $('#xunMe').stop().animate({ left: xunMe_const * -350 }, 400);
+        
         if (xunMe_const == $('#xunMe .hmzj_item').length - 1) {
             $('#xunMe_dot .slider_indicators_btn').eq(0).addClass('on').siblings().removeClass('on');
-        } else { 
+        } else {
             $('#xunMe_dot .slider_indicators_btn').eq(xunMe_const).addClass('on').siblings().removeClass('on');
-        }   
-     }
+        }
+    }
 
-    $('#xunMe_dot .slider_indicators_btn').mouseover(function () { 
+    $('#xunMe_dot .slider_indicators_btn').mouseover(function () {
         clearInterval(xunMe_time);
         xunMe_const = $(this).index();
         xunMe_wrap();
@@ -386,5 +389,59 @@ $(function () {
         xunMe_auto();
     })
 
-});
+    // 特色推荐
+    // var tuijian_item = $('#TsTuiJian .mangsu_item').first().clone();
+    $('#TsTuiJian').width($('#TsTuiJian .mangsu_item').length * ($('#TsTuiJian .mangsu_item').width()+10));
 
+    var tuijian_const = 0;
+    var tuijian_times;
+    var tuijian_item = $('#TsTuiJian .tesefore3').width() * 3;
+    tuijian_auto();
+
+    $('#tuijian_next').click(function () { 
+        clearInterval(tuijian_times);
+        tuijian_const--; 
+        tuijian_wrap();
+        tuijian_auto();
+    })
+    
+    $('#tuijian_prev').click(function () { 
+        clearInterval(tuijian_times);
+        tuijian_const++
+        tuijian_wrap();
+        tuijian_auto();
+    })
+
+
+    function tuijian_auto() { 
+        tuijian_times = setInterval(function () { 
+            tuijian_const++;
+            tuijian_wrap();
+        },3000)
+    }
+
+    function tuijian_wrap() { 
+        if (tuijian_const == $('#TsTuiJian .tesefore3').length) { 
+            tuijian_const = 1;
+            $('#TsTuiJian').css({ left: 0 });
+        }
+        if (tuijian_const == -1) { 
+            tuijian_const = $('#TsTuiJian .tesefore3').length - 2;
+            $('#TsTuiJian').css({ left: ($('#TsTuiJian .tesefore3').length - 1) * (-tuijian_item - 20) });
+        }
+        $('#TsTuiJian').stop().animate({ left: tuijian_const * (-tuijian_item - 20) }, 400);
+        if (tuijian_const == $('#TsTuiJian .tesefore3').length - 1) { 
+            $('#TJ_dot .Every').eq(0).addClass('on').siblings().removeClass('on');  
+        } else {
+            $('#TJ_dot .Every').eq(tuijian_const).addClass('on').siblings().removeClass('on');  
+        }
+    }
+
+    $('#TJ_dot .Every').mouseover(function () { 
+        clearInterval(tuijian_times);
+        tuijian_const = $(this).index();
+        tuijian_wrap();
+    }).mouseout(function () { 
+        tuijian_auto();
+    })
+});

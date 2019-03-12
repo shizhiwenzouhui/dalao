@@ -444,25 +444,4 @@ $(function () {
     }).mouseout(function () { 
         tuijian_auto();
     })
-
-    //点击返回顶部
-    $('.sidebar_item').on('mouseover', function () { 
-        $('.sidebar_item .sidebar_artic').addClass('sidebar_hover');
-        $('.sidebar_item .sidebar_artic .tab_top').stop().animate({left:-49},400);
-    }).mouseout(function () { 
-        $('.sidebar_artic').removeClass('sidebar_hover');
-        $('.sidebar_item .sidebar_artic .tab_top').stop().animate({left:35},400);
-    })
-
-    $('.sidebar_item .sidebar_artic').click(function () { 
-        $('html,body').animate({ scrollTop: 0 }, 400);
-    })
-    $('.sidebar_artic').mouseover(function () { 
-        $(this).addClass('sidebar_hover');
-        $(this).children(".tab_top").animate({ left: -49 });
-    }).mouseout(function () { 
-        $(this).removeClass('sidebar_hover');
-        $(this).children(".tab_top").animate({ left: 35 });
-    })
-
 });

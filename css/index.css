@@ -2588,6 +2588,7 @@
 }
 .Report .Report_item{
     display: inline-block;
+    width: 103px;
     height: 32px;
     margin: 0 3px;
     overflow: hidden;
@@ -2651,110 +2652,4 @@
     background: url(../images/duokuai.png);
     background-repeat: no-repeat;
     background-position: -108px -172px;
-}
-.Sidebar_after .Sidebar_box{
-    position: fixed;
-    right: 0;
-    top: 0;
-    height: 100%;
-    width:0;
-    z-index: 999;
-}
-.Sidebar_after .Sidebar_box .sidebar_wrap{
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 0;
-    height: 100%;
-    border-right: 6px solid #7a6e6e;
-    transition: right .3s ease-in-out 0s;
-}
-.Sidebar_after .Sidebar_box .sidebar_wrap .sidebar_top{
-    position: absolute;
-    bottom: -1px;
-    width: 100%;
-    left: -29px;    
-}
-.sidebar_item{
-    width: 35px;
-    height: 35px;
-    position: relative;
-    margin-bottom: 1px;
-    cursor: pointer;
-    background-color: #7a6e6e;
-    border-radius: 3px 0 0 3px;
-}
-.sidebar_item .sidebar_artic .tab_icn{
-    width: 34px;
-    height: 35px;
-    margin-left: 1px;
-    position: relative;
-    z-index: 2;
-    background-color: #7a6e6e;
-    background-image: url(../images/tab_icon.png);
-    background-repeat: no-repeat;
-    display: inline-block;
-    background-position: -50px -250px;
-}
-.sidebar_item .sidebar_artic .tab_top{
-    height: 35px;
-    line-height: 35px;
-    color: #fff;
-    text-align: center;
-    font-family: 微软雅黑;
-    position: absolute;
-    z-index: 1;
-    left: 35px;
-    top: 0;
-    background-color: #7a6e6e;
-    border-radius: 3px 0 0 3px;
-    width: 50px;
-}
-.sidebar_hover .tab_top{
-    background-color: #c81623 !important;
-}
-.sidebar_artic .tab_icn:hover{
-    background-color:  #c81623 !important;
-}
-.sidebar_tabs{
-    position: absolute;
-    top: 50%;
-    left: -29px;
-    width: 35px;
-    margin-top: -80px;
-}
-.sidebar_tabs .sidebar_souhou{
-    width: 35px;
-    height: 35px;
-    position: relative;
-    margin-bottom: 1px;
-    cursor: pointer;
-    background-color: #7a6e6e;
-    border-radius: 3px 0 0 3px;
-}
-.sidebar_tabs .sidebar_souhou .sidebar_artic .tab_icn{
-    background-position: -190px -150px;
-    width: 34px;
-    height: 35px;
-    margin-left: 1px;
-    position: relative;
-    z-index: 2;
-    background-color: #7a6e6e;
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-image: url(../images/tab_icon.png);
-}
-.sidebar_tabs .sidebar_souhou .sidebar_artic .tab_top{
-    height: 35px;
-    line-height: 35px;
-    color: #fff;
-    text-align: center;
-    font-family: 微软雅黑;
-    position: absolute;
-    z-index: 1;
-    left: 35px;
-    top: 0;
-    background-color: #7a6e6e;
-    border-radius: 3px 0 0 3px;
-    width: 50px;
 }

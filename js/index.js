@@ -1,8 +1,43 @@
 
 $(function () {
+
+    //轮播图ajax
+    $.ajax({
+        url: "http://127.0.0.1/jd_web/php/index.php",
+        dataType: "json",
+        type: "get",
+        async: false,
+        cache: false,
+        success: function (data) { 
+            console.log(data);
+            var indexBanner = "";
+            for (var i = 0; i < data.length; i++) { 
+                indexBanner += `
+                <li class="fs_col2_item">
+                        <a class="details.html" target="_blank">
+                                <img width="590" height="470"  src="${data[i].imgs}" alt="${data[i].lid}">
+                        </a>
+                </li>
+                `;
+            }
+            $('#main_banner').html(indexBanner);
+        },
+        error: function () { 
+            alert("网络故障 请检查!");
+        }
+
+    })
+
+
     //轮播图
+    $('.fs_col2_item').first().css({ opacity: 1 }).siblings().css({ opacity: 0 });
     var mainBanner = 0;   //声明一个变量控制轮播图
     var bannerltn = $('#main_banner .fs_col2_item').length; //拿到轮播图图片的个数
+    for (var i = 0; i < bannerltn; i++) {
+        var liconst = "<li class='radius_item'></li>"
+        $('#mb_redi').append(liconst);
+     }
+
     $('#mb_redi .radius_item:first').addClass('radius_item_on'); //控制轮播图走向的小圆点第一个加上on
     $('#mb_redi .radius_item').on('mouseover', function () {
         mainBanner = $(this).index();
